@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://brruu626l4qus"]
+
+[ext_resource type="Script" path="res://rat_player.gd" id="1_hg1hw"]
+[ext_resource type="Texture2D" uid="uid://c01lkxb18njf5" path="res://tinyrat.png" id="1_n3tkn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rm6tt"]
+size = Vector2(14, 15)
+
+[node name="RatPlayer" type="CharacterBody2D"]
+script = ExtResource("1_hg1hw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_rm6tt")
+one_way_collision_margin = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 0)
+texture = ExtResource("1_n3tkn")
