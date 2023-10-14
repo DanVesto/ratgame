@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo2b5ym4l1ala"]
+
+[ext_resource type="PackedScene" uid="uid://db7538oret0jj" path="res://Ratlantis.tmx" id="1_4t4hv"]
+
+[node name="Ratlantis" instance=ExtResource("1_4t4hv")]
