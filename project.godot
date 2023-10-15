@@ -17,9 +17,11 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
-window/stretch/scale=4.0
+window/size/viewport_width=384
+window/size/viewport_height=216
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+window/snap/snap_2d_transforms_to_pixel=false
 
 [editor]
 
@@ -28,6 +30,28 @@ import/use_multiple_threads=false
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/YATI/plugin.cfg")
+
+[importer_defaults]
+
+texture={
+"compress/channel_pack": 0,
+"compress/hdr_compression": 1,
+"compress/high_quality": false,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d/compress_to": 0,
+"mipmaps/generate": false,
+"mipmaps/limit": -1,
+"process/fix_alpha_border": true,
+"process/hdr_as_srgb": false,
+"process/hdr_clamp_exposure": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"process/size_limit": 0,
+"roughness/mode": 0,
+"roughness/src_normal": ""
+}
 
 [input]
 
@@ -62,6 +86,12 @@ dash={
 ]
 }
 
+[layer_names]
+
+2d_render/enabled=false
+2d_render/quality/use_taa=false
+
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true

@@ -9,3 +9,4 @@ texture_filter = 1
 [node name="Ratlantis" parent="." instance=ExtResource("2_2fxn2")]
 
 [node name="RatPlayer" parent="." instance=ExtResource("1_8wlgk")]
+position = Vector2(116, 54)
